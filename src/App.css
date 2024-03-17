@@ -1,5 +1,88 @@
+/* GLOBAL */
+/* * {
+  border: 1px solid red;
+} */
 .App {
   text-align: center;
+  background-color: #0D2436;
+  color: #FFFFFF;
+}
+
+.card {
+  background-color: #009B86;
+}
+
+.card:hover {
+  background-color:  #34AC9C
+}
+
+button {
+  cursor: pointer;
+}
+
+/* CATEGORY STYLES */
+
+.category {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+.category .list {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.category-title {
+  text-align: left;
+  padding-left: 10px;
+  /* width: 100%; */
+  background-color: grey;
+}
+
+/* CARD */
+
+.card {
+  width: calc((100% - 30px) / 3); /* assuming 10px gap on both sides of a card */
+  height: 350px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.card img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+  /* margin-bottom: 20px; */
+}
+
+.card button {
+  margin-bottom: 10px;
+  background-color: grey;
+  padding: 5px 10px;
+  border: #0D2436 1px solid;
+  border-radius: 5px;
+
+  color: #FFFFFF;
+
+}
+
+.card.selected button {
+  margin-bottom: 10px;
+  appearance: none;
+  background-color: #34AC9C;
+  border: #FFFFFF 1px solid;
+
+
+}
+
+.card.selected {
+  background-color: #009B86;
 }
 
 .App-logo {
@@ -8,25 +91,13 @@
 }
 
 .App-header {
-  background-color: #50B074;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
 .App-link {
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
