@@ -1,19 +1,11 @@
 /* GLOBAL */
-/* * {
-  border: 1px solid red;
-} */
+* {
+  font-family: 'Roboto';
+}
 .App {
   text-align: center;
   background-color: #0D2436;
   color: #FFFFFF;
-}
-
-.card {
-  background-color: #009B86;
-}
-
-.card:hover {
-  background-color:  #34AC9C
 }
 
 button {
@@ -31,7 +23,7 @@ button {
 }
 .category .list {
   display: flex;
-  gap: 10px;
+  gap: 25px;
   flex-wrap: wrap;
 }
 
@@ -45,13 +37,23 @@ button {
 /* CARD */
 
 .card {
-  width: calc((100% - 30px) / 3); /* assuming 10px gap on both sides of a card */
+  background-color: #009B86;
+}
+
+.card:hover {
+  background-color:  #34AC9C;
+  color: #CCCCCC;
+}
+
+.card {
+  width: calc((100% - 50px) / 3); 
   height: 350px;
   height: auto;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
+  border-radius: 10px;
 }
 .card img {
   width: 120px;
@@ -85,6 +87,64 @@ button {
   background-color: #009B86;
 }
 
+/* MODAL */
+
+.modal {
+  position: fixed; 
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5); 
+  display: flex;
+  align-items: center; 
+  justify-content: center;
+}
+
+.modal div{
+  background-color: #FFFFFF;
+  padding: 20px;
+  border-radius: 5px;
+  display:flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.modal div button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.modal p {
+  color: #0D2436;
+}
+
+/* SUBMIT BUTTON */
+
+.submitButton {
+  background-color: #009B86;
+  appearance: none;
+  justify-self: end;
+  margin-bottom: 20px;
+  margin-right: 50px;
+  cursor: pointer;
+  color: #FFFFFF;
+  border-radius: 10px;
+  border: #009B86 1px solid;
+  padding: 15px 25px;
+  font-weight: 700;
+}
+
+.submitButton:hover {
+  background-color:  #34AC9C;
+  color: #CCCCCC;
+}
+
 .App-logo {
   height: 15vmin;
   pointer-events: none;
@@ -100,4 +160,12 @@ button {
 .App-link {
   color: #61dafb;
 }
-
+@media (max-width:555px) {
+  .card {
+    width: 85%;
+    margin: 0 auto;
+  }
+  .submitButton {
+    margin: 20px auto;
+  }
+}

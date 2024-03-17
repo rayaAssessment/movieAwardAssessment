@@ -1,8 +1,10 @@
 import React from 'react';
 
-const SubmitButton = ({selections}) => {
+const SubmitButton = ({selections, handleSubmitBallot}) => {
   return (
-    <button> Submit Nominations</button>
+    <div style={{display:"grid"}}>
+      <button className='submitButton' onClick={()=> handleSubmitBallot(selections)}> Submit Nominations</button>
+    </div>
   )
 }
 
