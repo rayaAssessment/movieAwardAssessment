@@ -46,6 +46,27 @@ Here are the rules of this challenge.. you must:
 
   Good luck and if you have questions, please reach out to us at rafael.freaner@dailypay.com
 
+## Applicate Message - Running the Application Locally
+
+Due to dependencies on certain legacy features in Node.js, this application may require a specific environment variable to be set when running on newer versions of Node.js. If you encounter any issues related to SSL or cryptographic functions, you may need to enable the OpenSSL legacy provider. (As was the case with me)
+
+To run the application locally with the necessary environment variable:
+
+For macOS/Linux:
+
+export NODE_OPTIONS=--openssl-legacy-provider
+yarn start
+
+For Windows (in Command Prompt):
+set NODE_OPTIONS=--openssl-legacy-provider
+yarn start
+
+Or, for PowerShell:
+$env:NODE_OPTIONS="--openssl-legacy-provider"
+yarn start
+
+These commands temporarily set the NODE_OPTIONS environment variable to use the OpenSSL legacy provider for the duration of your terminal session, allowing the application to run without modification to the codebase.
+
 ## Available Scripts
 
 In the project directory, you can run:
