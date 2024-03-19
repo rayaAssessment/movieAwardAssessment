@@ -54,8 +54,6 @@ function App() {
         </h1>
 
       </header>
-      {console.log(ballotData)}
-      {console.log(selections)}
       {ballotData?.map((category) => (
         <Categories key={category.id} category={category} handleNomineeClick={handleNomineeClick} selections={selections}
         />
