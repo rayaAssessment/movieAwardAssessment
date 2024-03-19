@@ -54,16 +54,21 @@ To run the application locally with the necessary environment variable:
 
 For macOS/Linux:
 
-export NODE_OPTIONS=--openssl-legacy-provider
-yarn start
+`export NODE_OPTIONS=--openssl-legacy-provider`
+
+`yarn start`
 
 For Windows (in Command Prompt):
-set NODE_OPTIONS=--openssl-legacy-provider
-yarn start
+
+`set NODE_OPTIONS=--openssl-legacy-provider`
+
+`yarn start`
 
 Or, for PowerShell:
-$env:NODE_OPTIONS="--openssl-legacy-provider"
-yarn start
+
+`$env:NODE_OPTIONS="--openssl-legacy-provider"`
+
+`yarn start`
 
 These commands temporarily set the NODE_OPTIONS environment variable to use the OpenSSL legacy provider for the duration of your terminal session, allowing the application to run without modification to the codebase.
 
