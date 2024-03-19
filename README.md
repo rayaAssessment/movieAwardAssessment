@@ -46,7 +46,7 @@ Here are the rules of this challenge.. you must:
 
   Good luck and if you have questions, please reach out to us at rafael.freaner@dailypay.com
 
-## Applicate Message - Running the Application Locally
+## Applicant Message - Running the Application Locally
 
 Due to dependencies on certain legacy features in Node.js, this application may require a specific environment variable to be set when running on newer versions of Node.js. If you encounter any issues related to SSL or cryptographic functions, you may need to enable the OpenSSL legacy provider. (As was the case with me)
 
